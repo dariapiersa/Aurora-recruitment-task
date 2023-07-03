@@ -1,0 +1,35 @@
+$size-9: 0.563rem;
+$size-10: 0.875rem;
+$size-14: 1.2rem;
+
+$header: "Lato";
+$contact: "Myriad Pro";
+$input: "Helvetica";
+
+$weights-regular: 400;
+$weights-medium: 500;
+$weights-bold: 700;
+
+.h1 {
+    font-size: $size-10;
+    font-family: $header, sans-serif;
+    font-weight: $weights-regular;
+}
+
+.h2 {
+    font-size: $size-10;
+    font-family: $contact, sans-serif;
+    font-weight: $weights-regular;
+}
+
+.h3 {
+    font-size: $size-10;
+    font-family: $contact, sans-serif;
+    font-weight: $weights-bold;
+}
+
+.h4{
+    font-size: $size-10;
+    font-family: $input, sans-serif;
+    font-weight: $weights-regular;
+}
