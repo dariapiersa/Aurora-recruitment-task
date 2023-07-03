@@ -1,0 +1,39 @@
+@use 'partials/_colors.scss' as *;
+@use 'partials/breakpoints' as *;
+
+.shopping {
+    display: flex;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+  
+    @media (min-width: $size-large) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  
+    &_form {
+      width: 380px;
+      height: 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border-bottom: 1px solid $black-color;
+    }
+  
+    &_input {
+      border: none;
+      padding-left: 10px;
+  
+      &:focus {
+        outline: none;
+      }
+    }
+  
+    &_img {
+      border: none;
+      cursor: pointer;
+      background-color: $white-color;
+      padding: 10px 6px;
+    }
+  }

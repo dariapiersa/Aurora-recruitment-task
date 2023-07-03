@@ -1,6 +1,125 @@
 @use 'partials/_colors.scss' as *;
+@use 'partials/_fonts.scss' as *;
+@use 'partials/_breakpoints' as *;
+@use 'src/css/hamburger.scss' as *;
+@use 'src/css/shopping.scss' as *;
 
 body {
   margin: 0;
   background-color: $white-color;
+}
+
+a {
+  color: $black-color;
+  text-decoration: none;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+
+  &_left {
+    display: flex;
+    gap: 20px;
+    padding-top: 9px;
+  }
+
+  &_right {
+    display: flex;
+  }
+
+  &_image {
+    padding-right: 10px;
+  }
+}
+
+.categories {
+  text-transform: uppercase;
+
+  ul {
+    li {
+      list-style-type: none;
+      float: left;
+    }
+  }
+}
+
+.header-button {
+  cursor: pointer;
+  background-color: $white-color;
+  padding: 10px 20px;
+  border-width: 1px;
+  border-bottom: none;
+  border-top: none;
+  border-color: $details-color;
+
+  &_account {
+    border-left: none;
+  }
+
+  &_basket {
+    cursor: pointer;
+    padding: 36px 20px;
+    display: flex;
+  }
+}
+
+hr {
+  width: 100%;
+  height: 1px;
+  background-color: $details-color;
+  border-top: 1px;
+  border-bottom: 0;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 300px;
+  margin: 30px auto;
+
+  &_top {
+    max-width: 300px;
+    margin: 0 auto;
+  }
+
+  .nav-menu {
+    padding: 0 70px;
+  }
+
+  @media (min-width: $size-small) {
+    max-width: 550px;
+    margin: 30px auto;
+
+    &_top {
+      max-width: 550px;
+      margin: 0 auto;
+    }
+  }
+
+  @media (min-width: $size-large) {
+    max-width: 1190px;
+    margin: 30px auto;
+
+    &_top {
+      max-width: 1190px;
+      margin: 0 auto;
+    }
+  }
+}
+
+.line {
+  background-color: $white-color;
+
+  @media (min-width: $size-large) {
+    background-color: $details-color;
+  }
+
+  &-top {
+    background-color: $details-color;
+  }
 }

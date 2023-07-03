@@ -4,73 +4,116 @@
     <meta charset="UTF-8" >
     <meta name="viewport" content="width=device-width, initial-scale=1.0" >
     <title>Aurora Creation</title>
-    <link rel="stylesheet" href="./css/main.scss" />
+    <link rel="stylesheet" href="./css/main.scss" >
   </head>
   <body>
     <header>
       <div>
-        <a href="tel">
-          <img src="../src/assets/icons/call.png" alt="Call" >293 939 098
-        </a>
-        <a href="tel">
-          <img
-            src="../src/assets/icons/email.png"
-            alt="Email"
-          />kontakt@aurorabox.pl</a
-        >
-        <button>
-          <img src="../src/assets/icons/login.png" alt="Login" >Zaloguj się
-        </button>
-        <button>
-          <img src="../src/assets/icons/account.png" alt="Account" >Założ konto
-        </button>
-      </div>
-      <div>
-        <a href="#"><img src="../src/assets/logo/aurora_box.png" ></a>
-        <form>
-          <input type="text" placeholder="Co chcesz kupić?" >
-          <button type="submit">
-            <img src="../src/assets/icons/lens.png" >
-          </button>
-        </form>
-        <a>
-          <img src="../src/assets/icons/basket.png" alt="Basket" >
-        </a>
-        <span>Twój koszyk</span>
-      </div>
-      <div>
-        <nav>
-          <ul>
-            <li>
-              <a href="">kategorie</a>
-            </li>
-            <li>
-              <a href="">nowości</a>
-            </li>
-            <li>
-              <a href="">promocje</a>
-            </li>
-            <li>
-              <a href="">wyprzedaże</a>
-            </li>
-            <li>
-              <a href="">kolekcje sezony</a>
-            </li>
-            <li>
-              <a href="">nasza oferta</a>
-            </li>
-            <li>
-              <a href="">trendy 2018</a>
-            </li>
-            <li>
-              <a href="">blog</a>
-            </li>
-            <li>
-              <a href="">kontakt</a>
-            </li>
-          </ul>
-        </nav>
-      </div>
+        <div class="container_top">
+          <div class="header">
+            <div class="header_left ">
+              <a href="tel:293939098" class="nav-link h1">
+                <img
+                  class="header_image"
+                  src="../src/assets/icons/call.png"
+                  alt="Call"
+                >293 939 098
+              </a>
+              <a href="mailto:kontakt@aurorabox.pl" class="nav-link h2">
+                <img
+                  class="header_image"
+                  src="../src/assets/icons/email.png"
+                  alt="Email"
+                >kontakt@aurorabox.pl</a
+              >
+            </div>
+            <div class="header_right">
+              <button class="header-button nav-link h1">
+                <img
+                  class="header_image"
+                  src="../src/assets/icons/login.png"
+                  alt="Login"
+                >Zaloguj się
+              </button>
+              <button class="header-button_account header-button nav-link h1">
+                <img
+                  class="header_image"
+                  src="../src/assets/icons/account.png"
+                  alt="Account"
+                >Założ konto
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="line-top">
+          <hr >
+        </div>
+        <div class="container">
+          <div class="shopping">
+            <a href="#"><img src="../src/assets/logo/aurora_box.png"  alt="Logo"></a>
+            <form class="shopping_form">
+              <input
+                class="shopping_input h4"
+                type="text"
+                placeholder="Co chcesz kupić?"
+              >
+              <button type="submit" class="shopping_img">
+                <img src="../src/assets/icons/lens.png" alt="Lens">
+              </button>
+            </form>
+            <div class="header-button_basket">
+              <a>
+                <img src="../src/assets/icons/basket.png" alt="Basket" >
+              </a>
+              <div class="span h3">
+                <span>Twój koszyk</span>
+              </div>
+            </div>
+          </div>
+        </div>         
+          <div class="container ">
+            <div class="categories">
+              <nav>
+                <ul class="nav-menu h2">
+                  <li class="nav-item">
+                    <a href="" class="nav-link">kategorie</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">nowości</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">promocje</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">wyprzedaże</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">kolekcje sezony</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">nasza oferta</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">trendy 2018</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">blog</a>
+                  </li>
+                  <li class="nav-item">
+                    <a href="" class="nav-link">kontakt</a>
+                  </li>
+                </ul>
+                <div class="hamburger">
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                  <span class="bar"></span>
+                </div>
+              </nav>
+            </div>
+          </div>
+        </div>
     </header>
+      <hr class="line container" >
+    <script src="../src/js/script.js"></script>
   </body>
 </html>
