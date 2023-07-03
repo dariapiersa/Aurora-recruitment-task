@@ -17,6 +17,8 @@ a {
 .header {
   display: flex;
   justify-content: space-between;
+  white-space: nowrap;
+  flex-wrap: wrap;
 
   &_left {
     display: flex;
@@ -50,11 +52,15 @@ a {
   padding: 10px 20px;
   border-width: 1px;
   border-bottom: none;
-  border-top: none;
   border-color: $details-color;
+
+  @media(min-width: $size-small){
+    border-top: none;
+  }
 
   &_account {
     border-left: none;
+    border-color: $details-color;
   }
 
   &_basket {
